@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Devblog]]></title><description><![CDATA[개발공부 블로그입니다.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 03 Oct 2020 07:54:30 GMT</lastBuildDate><item><title><![CDATA[개발자 블로그 만들기(1) - Gatsby quick start]]></title><description><![CDATA[개발자들의 블로그를 만드는 방법에는 여러가지가 있다. 포털에서 제공해주는 블로그 Express 같은 CMS…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/create-blog-1/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/create-blog-1/</guid><pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개발자들의 블로그를 만드는 방법에는 여러가지가 있다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;포털에서 제공해주는 블로그&lt;/li&gt;
+&lt;li&gt;Express 같은 CMS 이용&lt;/li&gt;
+&lt;li&gt;정적 웹사이트 생성기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;나는 요새 대세라고 불리는 정적 사이트 생성기를 이용하여 블로그를 개설하기로 하였다.&lt;/p&gt;
+&lt;p&gt;사실 제일 유명한 생성기는 jekyll이다. 왜냐하면 Github Page에서 jekyll을 제공해주고 있기 때문이다. 그래서 많은 개발자들이 jekyll을 사용하고 있지만, jekyll은 Ruby 언어로 작성이 되어있다. 나는 따로 Ruby를 배우지 않았고, 요즘 react를 공부하고 있기 때문에 gatsby를 이용하기로 한다. github이 페이지를 배포함에 있어서 익숙하지만 나는 netlify를 이용하여 배포를 해볼 생각이다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;정리 1. 자바스크립트, reactr 기반의 정적사이트 생성기를 이용하여 블로그 개설&lt;/p&gt;
+&lt;p&gt;정리 2. netlify를 이용하여 블로그 배포&lt;/p&gt;
+&lt;p&gt;정리 3. &lt;a href=&quot;https://nodejs.org/ko/&quot;&gt;Node&lt;/a&gt;가 설치되어 있어야함. 설치확인은 터미널에서 &lt;code class=&quot;language-text&quot;&gt;$ node -v&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;$ npm -v&lt;/code&gt; 으로 확인!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.org/docs/quick-start&quot;&gt;Gatsby 공식문서 - quick start&lt;/a&gt; 를 이용하면 빠르게 설치할 수 있다. 간단하게 페이지 생성을 어떻게 하는지 맛만 보고, 바로 테마를 적용해보는 것을 추천한다. 이번 포스틍에서는 간단하게 quick start를 이용하여 빠르게 페이지 생성에 대해 알아본다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Gatsby CLI 설치&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm install -g gatsby-cli&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;새 사이트 생성&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;$ npx gatsby new gatsby-site&lt;/code&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npx&lt;/code&gt; 를 사용하면 최신 gatsby로 유지하여 사용할 수 있다. &lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npx&lt;/code&gt; 붙이지 않아도 무관.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;폴더로 진입하여 개발모드로 시작&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;$ cd gatsby-site&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run develop&lt;/code&gt; 혹은 &lt;code class=&quot;language-text&quot;&gt;$ gatsby develop&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://localhost:8000&quot;&gt;http://localhost:8000&lt;/a&gt; 에서 페이지 만든 것을 확인 할 수 있다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;배포모드로 시작&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run build&lt;/code&gt; 혹은 &lt;code class=&quot;language-text&quot;&gt;$ gatsby build&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://localhost:9000&quot;&gt;http://localhost:9000&lt;/a&gt; 에서 페이지 만든 것을 확인 할 수 있다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[내일은 2020]]></title><description><![CDATA[i have some regrets, but it was a good year. i have some regrets, but it was a good year. i have some regrets, but it was a good year. i…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/test/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/test/</guid><pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;i have some regrets, but it was a good year.&lt;/h1&gt;
+&lt;h2&gt;i have some regrets, but it was a good year.&lt;/h2&gt;
+&lt;h3&gt;i have some regrets, but it was a good year.&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;i have some regrets, but it was a good year.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;i have some regrets, but it was a good year.&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;i have some regrets, but it was a good year.&lt;/li&gt;
+&lt;li&gt;i have some regrets, but it was a good year.&lt;/li&gt;
+&lt;li&gt;i have some regrets, but it was a good year.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[2019년 마지막날 블로그 시작]]></title><description><![CDATA[Test 포스트입니다. Test 포스트입니다. Test 포스트입니다. Test 포스트입니다. Test 포스트입니다. Test 포스트입니다. Test 포스트입니다. Test 포스트입니다. Test 포스트입니다. Test 포스트입니다.
+Test…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/hello-world/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/hello-world/</guid><pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Test 포스트입니다.&lt;/h1&gt;
+&lt;h2&gt;Test 포스트입니다.&lt;/h2&gt;
+&lt;h3&gt;Test 포스트입니다.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Test 포스트입니다.&lt;/li&gt;
+&lt;li&gt;Test 포스트입니다.&lt;/li&gt;
+&lt;li&gt;Test 포스트입니다.&lt;/li&gt;
+&lt;li&gt;Test 포스트입니다.&lt;/li&gt;
+&lt;li&gt;Test 포스트입니다.&lt;/li&gt;
+&lt;li&gt;Test 포스트입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Test 포스트입니다.
+Test 포스트입니다.
+Test 포스트입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Test 포스트입니다.&lt;/em&gt;
+&lt;strong&gt;Test 포스트입니다.&lt;/strong&gt;
+~Test 포스트입니다.~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[내일은 2020]]></title><description><![CDATA[i have some regrets, but it was a good year. i have some regrets, but it was a good year. i have some regrets, but it was a good year. i…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/hello-world/test/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/hello-world/test/</guid><pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;i have some regrets, but it was a good year.&lt;/h1&gt;
+&lt;h2&gt;i have some regrets, but it was a good year.&lt;/h2&gt;
+&lt;h3&gt;i have some regrets, but it was a good year.&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;i have some regrets, but it was a good year.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;i have some regrets, but it was a good year.&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;i have some regrets, but it was a good year.&lt;/li&gt;
+&lt;li&gt;i have some regrets, but it was a good year.&lt;/li&gt;
+&lt;li&gt;i have some regrets, but it was a good year.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/new-beginnings/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
+Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+right at the coast of the Semantics, a large language ocean. A small river named
+Duden flows by their place and supplies it with the necessary regelialia.&lt;/p&gt;
+&lt;h2&gt;On deer horse aboard tritely yikes and much&lt;/h2&gt;
+&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
+Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+didn’t listen. She packed her seven versalia, put her initial into the belt and
+made herself on the way.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This however showed weasel&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Well uncritical so misled&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;this is very interesting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Goodness much until that fluid owl&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When she reached the first hills of the &lt;strong&gt;Italic Mountains&lt;/strong&gt;, she had a last
+view back on the skyline of her hometown &lt;em&gt;Bookmarksgrove&lt;/em&gt;, the headline of
+&lt;a href=&quot;http://google.com&quot;&gt;Alphabet Village&lt;/a&gt; and the subline of her own road, the Line
+Lane. Pityful a rhetoric question ran over her cheek, then she continued her
+way. On her way she met a copy.&lt;/p&gt;
+&lt;h3&gt;Overlaid the jeepers uselessly much excluding&lt;/h3&gt;
+&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
+few insidious Copy Writers ambushed her, made her drunk with
+&lt;a href=&quot;http://google.com&quot;&gt;Longe and Parole&lt;/a&gt; and dragged her into their agency, where
+they abused her for their projects again and again. And if she hasn’t been
+rewritten, then they are still using her.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
+Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+right at the coast of the Semantics, a large language ocean.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It is a paradisematic country, in which roasted parts of sentences fly into your
+mouth. Even the all-powerful Pointing has no control about the blind texts it is
+an almost unorthographic life One day however a small line of blind text by the
+name of Lorem Ipsum decided to leave for the far World of Grammar.&lt;/p&gt;
+&lt;h3&gt;According a funnily until pre-set or arrogant well cheerful&lt;/h3&gt;
+&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
+Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+didn’t listen. She packed her seven versalia, put her initial into the belt and
+made herself on the way.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;So baboon this&lt;/li&gt;
+&lt;li&gt;Mounted militant weasel gregariously admonishingly straightly hey&lt;/li&gt;
+&lt;li&gt;Dear foresaw hungry and much some overhung&lt;/li&gt;
+&lt;li&gt;Rash opossum less because less some amid besides yikes jeepers frenetic
+impassive fruitlessly shut&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When she reached the first hills of the Italic Mountains, she had a last view
+back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
+Village and the subline of her own road, the Line Lane. Pityful a rhetoric
+question ran over her cheek, then she continued her way. On her way she met a
+copy.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
+been rewritten a thousand times and everything that was left from its origin
+would be the word “and” and the Little Blind Text should turn around and
+return to its own, safe country.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
+few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
+and dragged her into their agency, where they abused her for their projects
+again and again. And if she hasn’t been rewritten, then they are still using
+her. Far far away, behind the word mountains, far from the countries Vokalia and
+Consonantia, there live the blind texts.&lt;/p&gt;
+&lt;h4&gt;Silent delightfully including because before one up barring chameleon&lt;/h4&gt;
+&lt;p&gt;Separated they live in Bookmarksgrove right at the coast of the Semantics, a
+large language ocean. A small river named Duden flows by their place and
+supplies it with the necessary regelialia. It is a paradisematic country, in
+which roasted parts of sentences fly into your mouth.&lt;/p&gt;
+&lt;p&gt;Even the all-powerful Pointing has no control about the blind texts it is an
+almost unorthographic life One day however a small line of blind text by the
+name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
+advised her not to do so, because there were thousands of bad Commas, wild
+Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.&lt;/p&gt;
+&lt;h5&gt;Wherever far wow thus a squirrel raccoon jeez jaguar this from along&lt;/h5&gt;
+&lt;p&gt;She packed her seven versalia, put her initial into the belt and made herself on
+the way. When she reached the first hills of the Italic Mountains, she had a
+last view back on the skyline of her hometown Bookmarksgrove, the headline of
+Alphabet Village and the subline of her own road, the Line Lane. Pityful a
+rhetoric question ran over her cheek, then she continued her way. On her way she
+met a copy.&lt;/p&gt;
+&lt;h6&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
+&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
+been rewritten a thousand times and everything that was left from its origin
+would be the word “and” and the Little Blind Text should turn around and return
+to its own, safe country. But nothing the copy said could convince her and so it
+didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
+with Longe and Parole and dragged her into their agency, where they abused her
+for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
+chicken eggs, though the…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/my-second-post/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
+&lt;p&gt;Did you know that “despite its name, salted duck eggs can also be made from
+chicken eggs, though the taste and texture will be somewhat different, and the
+egg yolk will be less rich.”?
+(&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Yeah, I didn’t either.&lt;/p&gt;</content:encoded></item></channel></rss>
