@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Devblog]]></title><description><![CDATA[개발공부 블로그입니다.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 04 Oct 2020 10:06:47 GMT</lastBuildDate><item><title><![CDATA[다시 gatsby]]></title><description><![CDATA[하나둘~하나둘
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Devblog]]></title><description><![CDATA[개발공부 블로그입니다.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 04 Oct 2020 10:12:25 GMT</lastBuildDate><item><title><![CDATA[다시 gatsby]]></title><description><![CDATA[하나둘~하나둘
 다시한번 gatsby]]></description><link>https://gatsby-starter-blog-demo.netlify.com/create-blog-1/test/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/create-blog-1/test/</guid><pubDate>Sun, 04 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;하나둘~하나둘
 다시한번 gatsby&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개발자 블로그 만들기(1) - Gatsby quick start]]></title><description><![CDATA[개발자들의 블로그를 만드는 방법에는 여러가지가 있다. 포털에서 제공해주는 블로그 Express 같은 CMS…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/create-blog-1/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/create-blog-1/</guid><pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개발자들의 블로그를 만드는 방법에는 여러가지가 있다.&lt;/p&gt;
 &lt;ol&gt;
@@ -81,7 +81,11 @@ Test 포스트입니다.&lt;/p&gt;
 &lt;li&gt;i have some regrets, but it was a good year.&lt;/li&gt;
 &lt;li&gt;i have some regrets, but it was a good year.&lt;/li&gt;
 &lt;li&gt;i have some regrets, but it was a good year.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[2020 10월 테스트]]></title><description><![CDATA[I just wanna let you go.
+when I have to buy a lot of stuff,
+I go to a large discount market.]]></description><link>https://gatsby-starter-blog-demo.netlify.com/third-post/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/third-post/</guid><pubDate>Fri, 04 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I just wanna let you go.
+when I have to buy a lot of stuff,
+I go to a large discount market.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/new-beginnings/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
